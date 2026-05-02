@@ -1,0 +1,8 @@
+ __pycache__/
+*.pyc
+*.pyo
+*.pkl
+feature_importance.json
+feature_cols.pkl
+.env
+venv/
