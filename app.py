@@ -12,6 +12,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, accuracy_score
 from sklearn.pipeline import Pipeline
+from flask import send_from_directory
 import joblib
 import json
 import os
@@ -244,6 +245,10 @@ def engineer_features(data: dict) -> pd.DataFrame:
 # ─────────────────────────────────────────
 # ROUTES
 # ─────────────────────────────────────────
+
+@app.route('/')
+def index():
+    return send_from_directory('frontend', 'index.html')
 
 @app.route("/api/predict", methods=["POST"])
 def predict():
