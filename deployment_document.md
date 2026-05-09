@@ -97,9 +97,9 @@ sudo docker logs -f profileguard
 ```
 Wait until you see:
 ```
-✅ Models saved.
-🚀 Starting Fake Profile Detector API...
-* Running on http://0.0.0.0:5000
+Models saved.
+Starting Fake Profile Detector API...
+Running on http://0.0.0.0:5000
 ```
 
 ### Step 6 — Open in browser
